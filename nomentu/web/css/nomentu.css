@@ -1,0 +1,21 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/* Navigation Authorization Top */
+.header.links .authorization-link a{
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px 25px;
+}
+
+.header.links li a{
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none !important;
+}
+
+.page-header .panel.wrapper.acc-navbar{
+  background-color: #8d847a;
+}
