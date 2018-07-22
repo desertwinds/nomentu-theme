@@ -9,9 +9,6 @@
     <move element="register-link" destination="header.links" before="-"/>
     <referenceContainer name="header.panel.wrapper" htmlClass="panel wrapper acc-navbar">
       <referenceBlock name="header.links">
-        <arguments>
-          <argument name="text" xsi:type="string"><![CDATA[<!-- sigh.. OMG -->]]></argument>
-        </arguments>
         <referenceBlock name="authorization-link-login">
           <arguments>
             <argument name="sortOrder" xsi:type="number">50</argument>
