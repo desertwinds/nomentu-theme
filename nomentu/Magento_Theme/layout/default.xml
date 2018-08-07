@@ -7,6 +7,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
   <body>
     <move element="register-link" destination="header.links" before="-"/>
+    <move element="copyright" destination="footer" after="-"/>
     <referenceContainer name="header.panel.wrapper" htmlClass="panel wrapper acc-navbar">
       <referenceBlock name="header.links">
         <referenceBlock name="authorization-link-login">
@@ -17,6 +18,7 @@
       </referenceBlock>
     </referenceContainer>
     <referenceBlock name="header" remove="true"/>
+
     <!-- <referenceContainer name="header.panel">
       <block class="Magento\Theme\Block\Html\Header\Logo" name="logo2" before="-">
         <arguments>

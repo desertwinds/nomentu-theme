@@ -3,6 +3,11 @@ body{
   font-size: 20px;
 }
 
+/* Headings */
+h1 {
+  font-weight: 500;
+}
+
 /* Navigation Authorization Top */
 .header.links .authorization-link a{
   border: 1px solid #fff;
@@ -94,10 +99,65 @@ nav.navigation .level0.active > .level-top {
 }
 
 /* Buttons */
-.action.primary, .action.primary:hover, .action.primary:active {
+.action.primary, .action.primary:hover, .action.primary:active, .action.primary:focus {
   background-color: #366d68;
+  border-color: #366d68
 }
 
 button {
   border-radius: 4px;
 }
+
+/* Login/Registration forms */
+
+.login-container .block-title strong {
+  font-size: 24px;
+}
+
+.fieldset>.field>.label, .fieldset>.fields>.field>.label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"] {
+  border: solid 1px #dddddd;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+@media (min-width: 768px), print {
+  footer.page-footer{
+    background-color: #8d847a;
+    color: white;
+  }
+
+  .footer.content .footer.links a, .footer.content .footer.links a:hover{
+    color: white;
+    font-size: 20px;
+  }
+
+  .footer.content ul.footer.links {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .footer.content .copyright {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .footer.content .copyright hr{
+    margin-bottom: 18px;
+  }
+}
+
+
+.block.newsletter .title {
+  display: block;
+}
+
