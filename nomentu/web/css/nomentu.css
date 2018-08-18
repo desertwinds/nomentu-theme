@@ -3,6 +3,12 @@ body{
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 /* Headings */
 h1 {
   font-weight: 500;
@@ -84,6 +90,7 @@ nav.navigation .level0.active > .level-top {
 
 .breadcrumbs ul.items {
   color: black;
+  font-size: 16px;
 }
 
 .breadcrumbs ul.items > .item a{
@@ -92,6 +99,7 @@ nav.navigation .level0.active > .level-top {
 
 .breadcrumbs .items > .item::after{
   margin: 0;
+  line-height: 22px;
 }
 
 .breadcrumbs .items > .item strong {
@@ -159,5 +167,66 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
 
 .block.newsletter .title {
   display: block;
+}
+
+/* Item filters navigation */
+.filter-options-title::after{
+  color: #366d68;
+  font-size: 16px;
+}
+
+.filter-options-title {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.filter .block-subtitle {
+  border: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter-options-item {
+  border-bottom: solid 1px #dddddd;
+}
+
+/* List of items */
+
+.toolbar select {
+  background-color: white;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 #f1f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.abs-product-link>a:active, .product-item-name>a:active, .product.name a>a:active {
+  color: #0066cc;
+  font-weight: 500; 
+}
+.abs-product-link>a:hover, .product-item-name>a:hover, .product.name a>a:hover {
+  color: #0066cc;
+  font-weight: 500;
+}
+.abs-product-link>a:visited, .product-item-name>a:visited, .product.name a>a:visited{
+  color: #0066cc;
+  font-weight: 500;
+}
+.product-item-name>a, .product.name a>a {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+@media (min-width: 768px), print {
+  .toolbar-products {
+    font-size: 18px;
+  }
+
+  .toolbar select {
+    font-size: 18px;
+  }
 }
 
