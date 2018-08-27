@@ -76,6 +76,10 @@ nav.navigation .level0.active > .level-top {
     color: white;
   }
 
+  .header .logo {
+    margin-left: 30vw;
+  }
+
 }
 
 /* Cart */
