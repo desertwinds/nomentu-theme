@@ -112,8 +112,13 @@ nav.navigation .level0.active > .level-top {
 
 /* Buttons */
 .action.primary, .action.primary:hover, .action.primary:active, .action.primary:focus {
+  background-color: #8d847a;
+  border-color: #8d847a;
+}
+
+.action.subscribe.primary, .action.subscribe.primary:hover, .action.subscribe.primary:active, .action.subscribe.primary:focus {
   background-color: #366d68;
-  border-color: #366d68
+  border-color: #366d68;
 }
 
 button {
@@ -234,3 +239,86 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
   }
 }
 
+/* Catalog items */
+@media (min-width: 768px){
+  .product.detailed ul.nomentu-nav {
+    flex-direction: row !important;
+  }
+
+  ul.nomentu-nav li.nav-item.active::after{
+    content: "";
+    display: block;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    bottom: 0;
+    border-top: solid 2px #9f925d;
+  }
+
+  ul.nomentu-nav li.nav-item.active a.nav-link {
+    font-weight: 600;  
+  }
+
+  .nomentu-nav .nav-item a.nav-link{
+    padding: 1rem 0;
+  }
+
+  hr.nomentu-separator {
+    border-top: solid 1px #dddddd;
+    left: 50%;
+    margin-bottom: 0;
+    margin-left: -50vw;
+    margin-top: 0;
+    position: relative;
+    width: 100vw;
+  }
+
+  .nomentu-nav-content {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px){
+  hr.nomentu-separator {
+    display: none;
+  }
+}
+
+.product.detailed ul.nomentu-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+ul.nomentu-nav  li.nav-item{
+  flex: 1 1 auto;
+  margin: 0;
+  text-align: center;
+}
+
+ul.nomentu-nav a.nav-link {
+  color: #575756;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.product-info-main .stock.available, .product-info-main .stock.unavailable {
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.product-info-main .page-title-wrapper.product h1 {
+  color: black;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.product-info-price .price-box .price-container .price {
+  color: black;
+  font-weight: 600;
+}

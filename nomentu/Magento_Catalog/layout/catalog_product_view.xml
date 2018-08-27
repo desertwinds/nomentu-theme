@@ -6,7 +6,26 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
   <body>
-    <move element="product.info.overview" destination="product.info.details" before="-"/>
-    <move element="product.info.description" destination="product.info.details" after="-"/>
+    <referenceBlock name="product.info.overview" remove="true"/>
+    <referenceBlock name="product.info.sku" remove="true"/>
+    <referenceBlock name="product.info.description">
+      <arguments>
+        <argument name="title" translate="true" xsi:type="string">Description</argument>
+      </arguments>
+    </referenceBlock>
+    <referenceBlock name="product.attributes">
+      <arguments>
+        <argument name="title" translate="true" xsi:type="string">Details</argument>
+      </arguments>
+    </referenceBlock>
+
+    <referenceContainer name="product.info.main">
+      <block class="Magento\Theme\Block\Html\Title" name="product.main.title" template="Magento_Theme::html/title.phtml" before="-">
+        <arguments>
+          <argument name="css_class" xsi:type="string">product</argument>
+          <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
+        </arguments>
+      </block>
+    </referenceContainer>
   </body>
 </page>
