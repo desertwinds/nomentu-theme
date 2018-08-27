@@ -178,6 +178,12 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
   display: block;
 }
 
+.footer-links-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* Item filters navigation */
 .filter-options-title::after{
   color: #366d68;

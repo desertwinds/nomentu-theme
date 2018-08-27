@@ -20,6 +20,18 @@
     <referenceBlock name="header" remove="true"/>
     <referenceBlock name="page.main.title" remove="true"/>
 
+    <referenceContainer name="footer-container">
+      <referenceContainer name="footer">
+        <container name="footer.links.container" as="footer.links.container" label="Footer Info Container" htmlTag="div" htmlClass="footer-links-container">
+          <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+            <arguments>
+              <argument name="css_class" xsi:type="string">footer links</argument>
+            </arguments>
+          </block>
+        </container>
+      </referenceContainer>
+    </referenceContainer>
+
     <!-- <referenceContainer name="header.panel">
       <block class="Magento\Theme\Block\Html\Header\Logo" name="logo2" before="-">
         <arguments>
