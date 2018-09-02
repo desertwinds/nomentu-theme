@@ -1,6 +1,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
@@ -327,4 +328,96 @@ ul.nomentu-nav a.nav-link {
 .product-info-price .price-box .price-container .price {
   color: black;
   font-weight: 600;
+}
+
+/* Hero Banner */
+
+.nomentu-promo.nomentu-full {
+  margin: 0 calc(50% - 50vw);
+}
+
+.promo-gray-background {
+  background-color: #f7f7f7;
+}
+
+.nomentu-promo .right {
+  float: right;
+}
+
+.nomentu-promo a{
+  max-width: none;
+}
+
+.nomentu-promo .home-main .content {
+  background: none;
+}
+
+.nomentu-promo .block-promo .title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nomentu-promo .block-promo .info {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px){
+  .home-main .content {
+    left: 15%;
+    width: 30%;
+  }
+
+  .home-main img{
+    height: 100%;
+    left: 70%;
+    position: relative;
+  }
+}
+
+.nomentu-promo .button.action.more, .nomentu-promo .button.action.more:hover, .nomentu-promo .button.action.more:active, .nomentu-promo .button.action.more:focus {
+  background-color: #8d847a;
+  border-color: #8d847a;
+}
+
+.nomentu-promo.destination-promo p.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.nomentu-promo ul.nomentu-promo-countries {
+  list-style: none;
+}
+
+.nomentu-promo-countries li {
+  display: inline-block;
+  margin: 1rem 10px 0;
+}
+
+.nomentu-promo-countries a.country-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.nomentu-promo-countries a.country-link:hover, .nomentu-promo-countries a.country-link:hover, .nomentu-promo-countries a.country-link:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.nomentu-promo-countries .country-link .country-name {
+  display: block;
+  text-align: center;
+}
+
+.nomentu-promo-countries .country-link .country-flag {
+  width: 170px;
+  height: 106px;
+}
+
+@media (max-width: 767px){
+  .nomentu-promo ul.nomentu-promo-countries {
+    text-align: center;
+    padding-left: 0;
+  }
 }
