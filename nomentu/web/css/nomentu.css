@@ -332,7 +332,7 @@ ul.nomentu-nav a.nav-link {
 
 /* Hero Banner */
 
-.nomentu-promo.nomentu-full {
+.nomentu-full {
   margin: 0 calc(50% - 50vw);
 }
 
@@ -380,12 +380,44 @@ ul.nomentu-nav a.nav-link {
   border-color: #8d847a;
 }
 
-.nomentu-promo.destination-promo p.title {
+p.title.separator-title{
   font-size: 30px;
   text-align: center;
 }
 
-.nomentu-promo ul.nomentu-promo-countries {
+.banner-separator{
+  background-color: #9a965a;
+  height: 320px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-separator h2{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.banner-separator p{
+  color: white;
+  font-weight: bold;
+  max-width: 650px;
+}
+
+@media (max-width: 767px){
+  .banner-separator p{
+    max-width: 250px;
+  }
+}
+
+/* Countries banner */
+
+.nomentu-promo ul.nomentu-promo-countries,  {
   list-style: none;
 }
 
@@ -420,4 +452,46 @@ ul.nomentu-nav a.nav-link {
     text-align: center;
     padding-left: 0;
   }
+}
+
+/* Rating */
+.rating-summary .rating-result>span:before{
+  color: #efce4a;
+}
+
+/* Testimonials */
+.testimonials ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.testimonials li{
+  display: inline-block;
+}
+
+.testimonials img.testimonial-img{
+  border-radius: 50px;
+  display: block;
+  height: 100px;
+  margin: auto;
+  width: 100px;
+}
+
+.testimonials p{
+  max-width: 360px;
+  text-align: center;
+  margin: 0;
+}
+
+.testimonials p.testimonial-name{
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+.testimonials .rating-summary{
+  margin-bottom: 25px;
+  text-align: center;
 }
