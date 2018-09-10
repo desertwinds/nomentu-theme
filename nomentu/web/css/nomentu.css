@@ -375,6 +375,40 @@ ul.nomentu-nav a.nav-link {
   }
 }
 
+@media (max-width: 767px){
+  .nomentu-promo .home-main .content{
+    background-color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+
+  .nomentu-promo .block-promo.home-main img{
+    display: block;
+    height: 280px;
+    margin: auto;
+  }
+
+  .nomentu-promo .block-promo.home-main{
+    height: auto;
+  }
+
+  .nomentu-promo .block-promo.home-main .title{
+    font-size: 30px;
+  }
+
+  .nomentu-promo .block-promo .info{
+    font-size: 18px;
+  }
+
+  .nomentu-promo .block-promo .button{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+}
+
 .nomentu-promo .button.action.more, .nomentu-promo .button.action.more:hover, .nomentu-promo .button.action.more:active, .nomentu-promo .button.action.more:focus {
   background-color: #8d847a;
   border-color: #8d847a;
@@ -394,6 +428,7 @@ p.title.separator-title{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .banner-separator h2{
@@ -449,9 +484,46 @@ p.title.separator-title{
 
 @media (max-width: 767px){
   .nomentu-promo ul.nomentu-promo-countries {
+    border: solid 1px #dddddd;
+    border-radius: 4px;
     text-align: center;
     padding-left: 0;
   }
+
+  .nomentu-promo-countries .country-link .country-flag{
+    display: none;
+  }
+
+  .nomentu-promo-countries li{
+    border-bottom: solid 1px #dddddd;
+    display: block;
+    margin: 0;
+  }
+
+  .nomentu-promo-countries li:last-child{
+    border-bottom: 0;
+  }
+
+  .nomentu-promo.destination-promo {
+    padding: 0 20px;
+  }
+
+  .nomentu-promo-countries .country-link .country-name{
+    padding: 20px;
+    text-align: left;
+  }
+
+  .nomentu-promo-countries .country-name::after{
+    float: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    color: inherit;
+    content: '\e608';
+    font-family: 'luma-icons';
+    speak: none;
+  }
+
 }
 
 /* Rating */
