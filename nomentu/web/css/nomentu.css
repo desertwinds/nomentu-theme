@@ -15,6 +15,19 @@ h1 {
   font-weight: 500;
 }
 
+@media (min-width: 768px){
+  .logo {
+    background-color: white;
+    position: absolute;
+    top: -63px;
+    width: 170px;
+  }
+
+  .logo img{
+    margin: auto;
+  } 
+}
+
 /* Navigation Authorization Top */
 .header.links .authorization-link a{
   border: 1px solid #fff;
