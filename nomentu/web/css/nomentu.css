@@ -1,5 +1,4 @@
 body{
-  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   overflow-x: hidden;
 }
@@ -11,9 +10,6 @@ body{
 }
 
 /* Headings */
-h1 {
-  font-weight: 500;
-}
 
 @media (min-width: 768px){
   .logo {
@@ -47,26 +43,6 @@ h1 {
 
 .sections.nav-sections {
   background-color: white;
-}
-
-/* Navigation links */
-nav.navigation {
-  background-color: white;
-}
-
-nav.navigation .level0 > .level-top {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: black;
-}
-
-nav.navigation .level0.active > .level-top {
-  border: solid 1px black;
-  border-width: 0 0 2px;
-  font-weight: 1000;
 }
 
 /* Mobile navigation */
@@ -126,13 +102,13 @@ nav.navigation .level0.active > .level-top {
 
 /* Buttons */
 .action.primary, .action.primary:hover, .action.primary:active, .action.primary:focus {
-  background-color: #8d847a;
-  border-color: #8d847a;
+  /*background-color: #8d847a;
+  border-color: #8d847a;*/
 }
 
 .action.subscribe.primary, .action.subscribe.primary:hover, .action.subscribe.primary:active, .action.subscribe.primary:focus {
-  background-color: #366d68;
-  border-color: #366d68;
+  /*background-color: #366d68;
+  border-color: #366d68;*/
 }
 
 button {
