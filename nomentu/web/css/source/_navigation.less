@@ -52,6 +52,15 @@
     .navigation {
         padding: 0;
 
+        .level0{
+    
+          &.active,
+          &.has-active {
+            > .level-top {
+              .lib-css(font-weight, @font-weight__bold);
+            }
+          }
+        }
         .parent {
             .level-top {
                 position: relative;
@@ -312,18 +321,21 @@
 
   .navigation{
     .level0{
-      > .level-top {
-        .lib-css(text-transform, @navigation-desktop-level0-item__text-transform);
-        .lib-css(font-style, normal);
-        .lib-css(line-height, normal);
-        .lib-css(letter-spacing, normal);
-      }
+
       &.active,
       &.has-active {
         > .level-top {
           .lib-css(font-weight, @font-weight__bold);
         }
       }
+
+      > .level-top {
+        .lib-css(text-transform, @navigation-desktop-level0-item__text-transform);
+        .lib-css(font-style, normal);
+        .lib-css(line-height, normal);
+        .lib-css(letter-spacing, normal);
+      }
+      
       .submenu {
         .lib-css(text-transform, @navigation-desktop-level0-item__text-transform);
       }

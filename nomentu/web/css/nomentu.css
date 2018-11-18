@@ -47,23 +47,10 @@ body{
 
 /* Mobile navigation */
 @media only screen and (max-width: 767px){
-  .nav-open .nav-sections {
-    background-color: #366d68;
-  }
 
-  .nav-open .nav-sections nav.navigation {
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-  }
 
   .nav-open .nav-sections nav.navigation li {
     border: none;
-    color: white;
-  }
-
-  .nav-open .nav-sections nav.navigation li a{
-    color: white;
   }
 
   .header .logo {
