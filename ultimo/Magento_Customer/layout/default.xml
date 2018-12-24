@@ -26,6 +26,5 @@
         </arguments>
       </referenceBlock>
     </referenceBlock>
-    <!-- <move element="authorization-link" destination="top.links" after="register-link"/> -->
   </body>
 </page>
