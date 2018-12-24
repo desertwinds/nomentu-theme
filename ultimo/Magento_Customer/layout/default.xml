@@ -14,12 +14,13 @@
           <argument name="sortOrder" xsi:type="number">110</argument>
         </arguments>
       </block>
-      <referenceBlock name="register-link">
+      <referenceBlock name="register-link" remove="true"/>
+      <block class="Nomentu\Customer\Block\RegisterLink" name="custom-register-link">
         <arguments>
-          <argument name="label" xsi:type="string" translate="true">Register</argument>
           <argument name="sortOrder" xsi:type="number">100</argument>
+          <argument name="label" xsi:type="string" translate="true">Register</argument>
         </arguments>
-      </referenceBlock>
+      </block>
       <referenceBlock name="authorization-link">
         <arguments>
           <argument name="sortOrder" xsi:type="number">90</argument>
