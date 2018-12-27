@@ -49,3 +49,58 @@
 .top-links .header.links li{
   margin: 0 0 0 15px;
 }
+
+@media only screen and (min-width: @breakpoint__mobile-header) {
+
+  //header-regular
+  .header-container {
+
+    //
+    //  Logo
+    //  ---------------------------------------------
+
+    .logo-wrapper .logo img {
+      width: 126px;
+      height: 120px;
+    }
+  }
+
+  #user-menu #header-search {
+    display: inline-block;
+  }
+
+  #mainmenu .caret:before, #user-menu .caret:before{
+    content: "";
+  }
+  #mainmenu{
+    .level0{
+
+      &.active,
+      &.has-active {
+        > .level-top {
+          border-color: #000;
+          border-style: solid;
+          border-width: 0 0 2px;
+          .lib-css(font-weight, 600);
+        }
+      }
+    }
+    text-transform: capitalize;   
+  }
+
+  .header-top-container {
+    padding: 10px 0;
+  }
+
+  /*.header-top-container .header-top .links > li > * {
+    line-height: 1.4;
+  }*/
+}
+
+#mainmenu.nav-regular .nav-item.level0 > a {
+  text-transform: capitalize;
+}
+
+.page-wrapper{
+  border-top: none;
+}
