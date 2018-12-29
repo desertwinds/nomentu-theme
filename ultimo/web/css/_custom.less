@@ -215,13 +215,10 @@
   .product.data.items.style1.show-tabs {
     border-top: 2px solid #ddd;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 
     > .item.title {
-      display: inline-block;
       text-align: center;
-      float: none;
       flex-grow: 1;
       order: 1;
 
@@ -230,6 +227,7 @@
         background: transparent;
         border: none;
         margin-bottom: -2px;
+        padding-top: 0;
         border-bottom: 2px solid #9f925d;
       }
 
@@ -241,13 +239,13 @@
 
     > .item.content {
       border-top-width: 2px;
-      flex-basis: auto;
       margin-left: 0;
       float: none;
       margin: 0;
       order: 2;
       padding: 15px;
       border-bottom: 2px solid #ddd;
+      border-top: 2px solid #ddd;
     }
   }
 }
