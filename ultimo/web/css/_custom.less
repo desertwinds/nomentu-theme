@@ -287,3 +287,35 @@
 .cart.main.actions > button.action.update:before {
   display: none;
 }
+
+/* Hero Banner*/
+.hero-banner {
+  background-color: #f7f7f7;
+  color: black;
+  padding: 20px 0;
+
+  button {
+    background-color: #8d847a;
+    border: 1px solid #8d847a;
+    border-radius: 4px;
+    color: white;
+  }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .hero-banner .message{
+    text-align: center;
+  }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .hero-banner > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-banner .image-container {
+    order: 2;
+  }
+}
+
