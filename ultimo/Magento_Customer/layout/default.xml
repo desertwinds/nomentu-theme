@@ -8,6 +8,22 @@
   <body>
     <referenceBlock name="top.links">
       <referenceBlock name="my-account-link" remove="true"/>
+      <block class="Nomentu\Customer\Block\SocialLink">
+        <arguments>
+          <argument name="label" xsi:type="string">facebook</argument>
+          <argument name="href" xsi:type="string">#</argument>
+          <argument name="title" xsi:type="string">Join us on Facebook</argument>
+          <argument name="sortOrder" xsi:type="number">200</argument>
+        </arguments>
+      </block>
+      <block class="Nomentu\Customer\Block\SocialLink">
+        <arguments>
+          <argument name="label" xsi:type="string">instagram</argument>
+          <argument name="href" xsi:type="string">#</argument>
+          <argument name="title" xsi:type="string">Join us on Instagram</argument>
+          <argument name="sortOrder" xsi:type="number">190</argument>
+        </arguments>
+      </block>
       <block class="Nomentu\Customer\Block\Link" name="logged-in-account-link">
         <arguments>
           <argument name="label" xsi:type="string" translate="true">My Account</argument>
@@ -18,12 +34,13 @@
       <block class="Nomentu\Customer\Block\RegisterLink" name="custom-register-link">
         <arguments>
           <argument name="sortOrder" xsi:type="number">100</argument>
-          <argument name="label" xsi:type="string" translate="true">Register</argument>
+          <argument name="label" xsi:type="string" translate="true">Join</argument>
+          <argument name="class" xsi:type="string">join-link</argument>
         </arguments>
       </block>
       <referenceBlock name="authorization-link">
         <arguments>
-          <argument name="sortOrder" xsi:type="number">90</argument>
+          <argument name="sortOrder" xsi:type="number">110</argument>
         </arguments>
       </referenceBlock>
     </referenceBlock>

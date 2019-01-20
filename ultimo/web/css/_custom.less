@@ -34,23 +34,49 @@
 
 // @fontawesome-enable: false;
 
-.header.links .authorization-link.login a{
-  border: 1px solid #fff;
-  border-radius: 4px;
-  padding: 10px 25px;
+.header.links li a.join-link{
+  //border: 1px solid #fff;
+  //border-radius: 4px;
+  //padding: 10px 25px;
+  color: white !important;
+  background-color: #8d847a;
+  padding: 2px 10px;
 }
 
-.header.links li a{
-  padding: 10px 0;
+.header.links > li > a.join-link:hover {
+  color: white !important;
+}
+
+.header.links > li > a:hover {
+  color: black !important;
+}
+
+.header.links > li > a{
+  //padding: 10px 0;
+  padding: 2px 0;
   font-size: 20px;
   text-decoration: none !important;
+  color: black !important;
 }
 
-.top-links .header.links li{
+.top-links .header.links li:not(.social-links){
   margin: 0 0 0 15px;
 }
 
 @media only screen and (min-width: @breakpoint__mobile-header) {
+
+  /* Sticky Content*/
+
+  .main-container {
+    padding-top: 146px;
+  }
+
+  .header-primary-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
 
   //header-regular
   .header-container {
@@ -88,10 +114,12 @@
     text-transform: capitalize;   
   }
 
-  .header-top-container {
+  /* Removed this since we will not use top container anymore */
+  /*.header-top-container {
     padding: 10px 0;
   }
-
+  */
+  
   /*.header-top-container .header-top .links > li > * {
     line-height: 1.4;
   }*/
