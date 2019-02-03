@@ -11,7 +11,7 @@
       <block class="Nomentu\Customer\Block\Link" name="logged-in-account-link">
         <arguments>
           <argument name="label" xsi:type="string" translate="true">My Account</argument>
-          <argument name="sortOrder" xsi:type="number">110</argument>
+          <argument name="sortOrder" xsi:type="number">120</argument>
         </arguments>
       </block>
       <referenceBlock name="register-link" remove="true"/>
