@@ -36,6 +36,7 @@
 
 @pantone451c: #9f925d;
 @pantone403c: #8d847a;
+@dark-green:  #366d68;
 
 /* Sticky Header */
 ul.nav-holders-wrapper.right-column {
@@ -72,6 +73,10 @@ ul.nav-holders-wrapper.right-column {
   padding: 2px 0;
   font-size: 20px;
   text-decoration: none !important;
+  color: black !important;
+}
+
+.header.links > li > a:hover {
   color: black !important;
 }
 
@@ -167,7 +172,7 @@ ul.nav-holders-wrapper.right-column {
 
 /* Item filters navigation */
 .filter-options-title::after{
-  color: #366d68;
+  color: @dark-green;
 }
 
 .filter-options-title {
@@ -190,7 +195,7 @@ ul.nav-holders-wrapper.right-column {
 }
 
 
-// Footer Newsletter 
+/* Footer Newsletter  */
 .footer-primary .block.newsletter {
   width: 100%;
 
@@ -298,13 +303,13 @@ ul.nav-holders-wrapper.right-column {
 .filter-title strong[data-count]:after,
 .main-color--bg
 {
-    background-color: #366d68 !important;
+    background-color: @dark-green !important;
 }
 
 .opc-wrapper .shipping-address-item.selected-item,
 .main-color--border
 {
-    border-color: #366d68 !important;
+    border-color: @dark-green !important;
 }
 
 .cart-summary > .title.nomentu{
@@ -327,6 +332,19 @@ ul.nav-holders-wrapper.right-column {
 
 .cart.main.actions > button.action.update:before {
   display: none;
+}
+
+.action.action-login.secondary {
+  background: @pantone403c;
+  color: white;
+}
+
+button.action-auth-toggle {
+  background: @pantone403c !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 5px !important;
+  font-size: 20px;
 }
 
 /* Hero Banner*/
