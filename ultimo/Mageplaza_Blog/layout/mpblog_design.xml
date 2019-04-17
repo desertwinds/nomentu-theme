@@ -9,5 +9,8 @@
     <referenceContainer name="columns">
       <referenceContainer name="blog.sidebar.main" remove="true"/>
     </referenceContainer>
+    <referenceContainer name="content">
+      <referenceBlock name="mpblog.copy.right" remove="true"/>
+    </referenceContainer>
   </body>
 </page>
