@@ -88,6 +88,11 @@ ul.nav-holders-wrapper.right-column {
   margin: 0 0 0 15px;
 }
 
+.nav-regular .nav-panel a .caret {
+  opacity: 1;
+  
+}
+
 @media only screen and (min-width: @breakpoint__mobile-header) {
   //header-regular
   .header-container {
@@ -106,7 +111,7 @@ ul.nav-holders-wrapper.right-column {
     display: inline-block;
   }
 
-  #mainmenu .caret:before, #user-menu .caret:before{
+  #mainmenu > ul > li.level0 > a .caret:before, #user-menu .caret:before{
     content: "";
   }
   #mainmenu{
