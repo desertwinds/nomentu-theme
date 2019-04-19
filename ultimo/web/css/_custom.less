@@ -357,9 +357,11 @@ button.action-auth-toggle {
 
 /* Hero Banner*/
 .hero-banner {
-  background-color: #f1f2f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: black;
-  padding: 20px 0;
+  height: 450px;
 
   button {
     background-color: @pantone403c;
@@ -367,22 +369,41 @@ button.action-auth-toggle {
     border-radius: 4px;
     color: white;
   }
+
+  .message {
+    background-color: white;
+    padding: 20px;
+  }
+
+  > .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+  .hero-banner {
+    height: 280px !important;
+  }
+
   .hero-banner .message{
+    background-color: rgba(255, 255, 255, 0.5) !important;
     text-align: center;
   }
 }
 
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-  .hero-banner > .container {
-    display: flex;
-    align-items: center;
+@media only screen and (max-width: 1800px) {
+  .hero-banner {
+    background-image: url("https://s3.eu-west-2.amazonaws.com/nomentu/assets/hero-b-anner.jpg")
   }
 
-  .hero-banner .image-container {
-    order: 2;
+}
+
+@media only screen and (min-width: 1801px) {
+  .hero-banner {
+    background-image: url("https://s3.eu-west-2.amazonaws.com/nomentu/assets/hero-b-anner%403x.jpg");
   }
 }
 
