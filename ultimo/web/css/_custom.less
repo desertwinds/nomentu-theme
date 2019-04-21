@@ -469,3 +469,13 @@ button.action-auth-toggle {
 button {
   border-radius: 4px;
 }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+  .block.itemslider .block-title {
+    padding-right: 80px !important;
+  }
+}
+
+.block.itemslider .block-title {
+  padding-right: 0;
+}
